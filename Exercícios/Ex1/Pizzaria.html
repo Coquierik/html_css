@@ -3,16 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizzaria</title>
+    <style>
+        h1{
+            color: white;
+            border-style: double; width:fit-content;
+            background-color: yellow;
+            background: linear-gradient(to bottom right,
+            red, blue);
+        }
+
+    </style>
 </head>
 <body>
-    <h1>PIZZARIA GOSTOSA</h1><br>
-    nome: <input type="text"><br>
-    Email: <input type="email"><br>
-    Tel: <input type="number"><br>
-    Tamanho: G <input type="checkbox"> M <input type="checkbox"> P <input type="checkbox"><br>
-    Sabor: Queijo <input type="radio"> Doce <input type="radio"> Milho <input type="radio">
+   
     
+ <h1>Pedido Pizza</h1>
+  Nome: <input type="text" id="nome">
+  <br>
+  Email: <input type="email" id="email">
+  <br>
 
+  Tamanho:
+  <input type="radio" name="tamanho" value="G">Grande
+  <input type="radio" name="tamanho" value="M">Medio
+  <input type="radio" name="tamanho" value="P">Pequeno
+  <br>
+
+  Sabor:
+  <select name="sabor">
+  <option>Queijo</option>
+  <option>Chocolate</option>
+  <option>Frango</option>
+  </select>
+
+  Adicionais:
+  <input type="checkbox" name="borda">Borda
+  <input type="checkbox" name="queijo">Doces
+  <br>
+
+  Data de entrega:
+  <input type="date">
+  <br>
+
+  Comentario:<br>
+  <textarea name="mensagens" rows="8" cols=40"></textarea>
+  <br>
+
+  <input type="submit">
+  
+      
 </body>
 </html>
